@@ -1,12 +1,7 @@
-import Link from 'next/link'
+import Layout from '../conponents/MyLayout'
+import Header from '../conponents/Header'
 
+const indexPageContent = <p>index page</p>
 export default function Index() {
-  return (
-    <div>
-      <Link href="/about">
-        <a>About Page</a>
-      </Link>
-      <p>Hello Next.js</p>
-    </div>
-  )
+  return <Layout content={indexPageContent} />
 }
