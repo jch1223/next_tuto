@@ -1,10 +1,9 @@
-import Header from '../comps/Header'
+import Header from '../conponents/Header'
+import Layout from '../conponents/MyLayout'
 
-export default function About() {
-  return (
-    <div>
-      <Header />
-      <p>This is the about page</p>
-    </div>
-  )
+const aboutPageContent = <p>about page</p>
+
+function About() {
+  return <Layout content={aboutPageContent} />
 }
+export default About

@@ -1,10 +1,7 @@
-import Header from '../comps/Header';
+import Layout from '../conponents/MyLayout'
+import Header from '../conponents/Header'
 
+const indexPageContent = <p>index page</p>
 export default function Index() {
-  return (
-    <div>
-      <Header />
-      <p>Hello Next.js</p>
-    </div>
-  )
+  return <Layout content={indexPageContent} />
 }
